@@ -13,6 +13,7 @@
   <div id="horses" class="min-w-full">
     <% if @horses.any? %>
       <% @horses.each do |horse| %>
+        <hr>
         <%= render horse %>
         <p>
           <%= link_to "Show this horse", horse, class: "ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>

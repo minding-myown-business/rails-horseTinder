@@ -1,4 +1,10 @@
 <div id="<%= dom_id horse %>">
+  <% if horse.featured_image.attached? %>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Featured image:</strong>
+      <%= image_tag horse.featured_image %>
+    </p>
+  <% end %>
   <p class="my-5">
     <strong class="block font-medium mb-1">Name:</strong>
     <%= horse.name %>

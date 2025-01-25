@@ -65,6 +65,6 @@ class HorsesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def horse_params
-      params.expect(horse: [ :name, :species, :single, :sexuality ])
+      params.expect(horse: [ :name, :species, :single, :sexuality, :featured_image ])
     end
 end
